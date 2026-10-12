@@ -1,165 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> GUJRATI TRADER - Learning Community</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-
-  .card {
-    width: 85%;
-    max-width: 340px; 
-    background: #010a0f;
-    border: 1.5px solid #00d2ff;
-    border-radius: 35px;
-    padding: 20px 15px;
-    text-align: center;
-    box-shadow: 0 0 25px rgba(0, 210, 255, 0.15);
-  }
-
-  .profile-img {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    border: 3px solid #00d2ff;
-    object-fit: cover;
-    margin-top: -5px;
-    box-shadow: 0 0 15px #00d2ff;
-  }
-
-  h1 {
-    color: #fff;
-    font-size: 20px;
-    margin: 15px 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  .features {
-    text-align: left;
-    margin: 0 auto;
-    width: 90%;
-  }
-
-  .feature-item {
-    color: #ccc;
-    font-size: 13px;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    display: flex;
-    align-items: center;
-  }
-
-  .feature-item:last-child { border-bottom: none; }
-
-  .icon { margin-right: 12px; font-size: 16px; }
-
-  .join-text {
-    color: #eee;
-    font-size: 12px;
-    margin: 20px 0 12px;
-    font-weight: 300;
-  }
-
-  .telegram-btn {
-    display: block;
-    background: linear-gradient(90deg, #00d2ff 0%, #9247ff 100%);
-    color: white;
-    text-decoration: none;
-    padding: 14px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 12px rgba(0, 210, 255, 0.3);
-  }
-
-  .hindi-quote {
-    color: #bbb;
-    font-size: 13px;
-    margin-bottom: 20px;
-    line-height: 1.4;
-  }
-
-  .footer-box {
-    border: 1px solid rgba(0, 210, 255, 0.2);
-    border-radius: 12px;
-    padding: 8px;
-    font-size: 11px;
-    color: #888;
-  }
-
-  /* Link styling for Agency */
-  .footer-box a { 
-    color: #00d2ff; 
-    font-weight: bold; 
-    text-decoration: none;
-  }
-
-  .disclaimer {
-    font-size: 9px;
-    color: #444;
-    margin-top: 12px;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2aabee">
+  <title>Trade with munaafa | Stock Market Education</title>
+  <meta name="description" content="Explore stock market concepts, terminology and educational resources with the Trade with munaafa community.">
+  <link rel="preconnect" href="https://iili.io">
+  <style>
+    :root{color-scheme:light dark;--bg:#e7ebf0;--card:#ffffff;--bubble:#f1f5f9;--line:#dbe2ea;--ink:#0f1a24;--muted:#5d6b7a;--blue:#2aabee;--blue2:#229ed9;--accent:#1d8bd1;--out:#e3f2fd;--up:#2fa86b;--down:#e0465a}
+    @media (prefers-color-scheme:dark){:root{--bg:#0e1621;--card:#17212b;--bubble:#182533;--line:#25323f;--ink:#f5f7fa;--muted:#8d9ca9;--accent:#6ab3f3;--out:#2b5278}}
+    *{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+    body{margin:0;min-height:100vh;min-height:100dvh;padding:max(16px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));display:flex;justify-content:center;align-items:center;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55}
+    .page{width:100%;max-width:440px;margin:auto;min-width:0}
+    .card{width:100%;background:var(--card);border-radius:18px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.12);overflow-wrap:anywhere}
+    .head{padding:26px 20px 20px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue2) 100%);color:#fff;text-align:center}
+    .top{display:flex;align-items:center;justify-content:center;gap:14px}
+    .logo{flex:0 0 auto;width:76px;height:76px;object-fit:cover;border-radius:50%;border:3px solid #fff;background:#fff;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+    .chart{flex:1;min-width:0;max-width:150px;height:58px;padding:6px 8px;border-radius:12px;background:rgba(255,255,255,.92)}
+    .chart .up{fill:var(--up);stroke:var(--up)}.chart .dn{fill:var(--down);stroke:var(--down)}
+    h1{margin:16px 0 2px;font-size:clamp(24px,7vw,30px);line-height:1.2;font-weight:800;letter-spacing:.6px}
+    .sub{margin:0;font-size:13px;opacity:.92}
+    .body{padding:20px}
+    .intro{margin:0;color:var(--muted);font-size:15px;line-height:1.7;text-align:center}
+    .join{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:54px;margin-top:20px;padding:13px 18px;border-radius:12px;background:linear-gradient(180deg,var(--blue),var(--blue2));color:#fff;text-decoration:none;font-size:16px;font-weight:700;box-shadow:0 6px 18px rgba(34,158,217,.4);-webkit-tap-highlight-color:transparent;transition:filter .2s ease,transform .15s ease}
+    .join svg{width:22px;height:22px;fill:#fff}
+    .join:hover{filter:brightness(1.07)}.join:active{transform:scale(.985)}
+    .join:focus-visible,.agency-promo a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+    .note{margin:10px 0 0;color:var(--muted);font-size:12px;text-align:center}
+    .features{display:grid;gap:10px;margin:22px 0}
+    .feature{max-width:92%;padding:10px 14px;background:var(--bubble);border-radius:4px 16px 16px 16px}
+    .feature:nth-child(2){margin-left:auto;background:var(--out);border-radius:16px 4px 16px 16px}
+    .feature strong{display:block;color:var(--accent);font-size:14px;line-height:1.5}
+    .feature p{margin:0;color:var(--ink);opacity:.8;font-size:13px;line-height:1.6}
+    .disclaimer{padding:14px;border-radius:12px;background:var(--bubble);border-left:3px solid var(--blue)}
+    .disclaimer h2{margin:0 0 6px;font-size:13px}
+    .disclaimer p{margin:0;color:var(--muted);font-size:11.5px;line-height:1.75}
+    footer{padding-top:16px;text-align:center}
+    .agency-promo{display:flex;flex-direction:column;align-items:center;gap:2px;padding:12px 10px;border-radius:14px;background:var(--card);color:var(--muted);font-size:11px;box-shadow:0 1px 6px rgba(0,0,0,.08)}
+    .agency-promo a{padding:5px 8px;color:var(--accent);font-size:13px;font-weight:700;text-decoration:none}
+    .agency-promo a:hover{text-decoration:underline}
+    .copyright{padding:12px 5px 0;color:var(--muted);font-size:11px}
+    .sec{margin:0 0 22px}
+    .sec h2{margin:0 0 10px;font-size:15px}
+    .steps{list-style:none;margin:0;padding:0;display:grid;gap:10px;counter-reset:s}
+    .steps li{display:flex;gap:12px;align-items:flex-start;font-size:13px;color:var(--muted);line-height:1.6}
+    .steps li::before{counter-increment:s;content:counter(s);flex:0 0 26px;height:26px;display:grid;place-items:center;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;font-size:13px}
+    .steps b{display:block;color:var(--ink);font-size:14px}
+    .dd{display:grid;gap:10px}
+    .dd div{padding:12px 14px;border-radius:12px;background:var(--bubble);font-size:13px;line-height:1.6;color:var(--muted)}
+    .dd b{display:block;margin-bottom:4px;font-size:14px;color:var(--ink)}
+    .dd ul{margin:0;padding-left:18px}
+    .dd .yes b{color:var(--up)}.dd .no b{color:var(--down)}
+    .safe{padding:12px 14px;border-radius:12px;border:1px solid var(--blue);background:var(--out);font-size:13px;line-height:1.65}
+    .safe b{display:block;margin-bottom:3px}
+    details{border-bottom:1px solid var(--line);padding:11px 0;font-size:13px;color:var(--muted)}
+    details summary{cursor:pointer;color:var(--ink);font-weight:600;font-size:14px;list-style:none;display:flex;justify-content:space-between;gap:10px}
+    details summary::-webkit-details-marker{display:none}
+    details summary::after{content:"+";color:var(--accent);font-size:18px;line-height:1}
+    details[open] summary::after{content:"\2212"}
+    details p{margin:8px 0 0;line-height:1.7}
+    summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+    .tg{margin:0 0 22px;border-radius:14px;overflow:hidden;background:var(--bubble);border:1px solid var(--line)}
+    .tg-bar{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--card);border-bottom:1px solid var(--line)}
+    .tg-bar img{width:38px;height:38px;border-radius:50%;object-fit:cover}
+    .tg-bar b{display:block;font-size:14px;line-height:1.3}
+    .tg-bar span{font-size:12px;color:var(--muted)}
+    .tg-feed{padding:12px;display:grid;gap:8px}
+    .post{max-width:94%;padding:9px 12px 8px;background:var(--card);border-radius:4px 14px 14px 14px;font-size:13px;line-height:1.6;box-shadow:0 1px 2px rgba(0,0,0,.12)}
+    .post b{display:block;color:var(--accent);font-size:13.5px;margin-bottom:2px}
+    .post small{display:block;margin-top:4px;color:var(--muted);font-size:11px}
+    .tags{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 12px}
+    .tags span{padding:4px 10px;border-radius:14px;background:var(--out);color:var(--accent);font-size:12px;font-weight:600}
+    @media (max-width:360px){.head{padding:22px 14px 18px}.body{padding:16px 14px}.logo{width:64px;height:64px}}
+    @media (min-width:600px){body{padding-top:32px;padding-bottom:32px}}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
+  </style>
 </head>
+
 <body>
+  <main class="page">
+    <section class="card" aria-labelledby="page-title">
 
-<div class="card">
-  <img src="https://i.ibb.co/GQYGXHF4/In-Shot-20260927-223648191.jpg" alt=" GUJRATI TRADER" class="profile-img">
+      <div class="head"><div class="top">
+        <img class="logo" src="https://iili.io/nVgZzdl.jpg" alt="Trade with munaafa logo" width="72" height="72" fetchpriority="high" decoding="async">
+        <svg class="chart" viewBox="0 0 200 64" role="img" aria-label="Illustrative candlestick chart" preserveAspectRatio="xMidYMid meet">
+          <g stroke-width="2" stroke-linecap="round">
+            <g class="dn"><line x1="15" y1="30" x2="15" y2="58"/><rect x="10" y="38" width="10" height="14" stroke="none"/></g>
+            <g class="up"><line x1="45" y1="24" x2="45" y2="54"/><rect x="40" y="32" width="10" height="16" stroke="none"/></g>
+            <g class="dn"><line x1="75" y1="22" x2="75" y2="46"/><rect x="70" y="26" width="10" height="12" stroke="none"/></g>
+            <g class="up"><line x1="105" y1="14" x2="105" y2="44"/><rect x="100" y="20" width="10" height="18" stroke="none"/></g>
+            <g class="up"><line x1="135" y1="8" x2="135" y2="34"/><rect x="130" y="12" width="10" height="16" stroke="none"/></g>
+            <g class="dn"><line x1="165" y1="6" x2="165" y2="28"/><rect x="160" y="10" width="10" height="10" stroke="none"/></g>
+            <g class="up"><line x1="190" y1="2" x2="190" y2="22"/><rect x="185" y="5" width="10" height="11" stroke="none"/></g>
+          </g>
+        </svg>
+      </div>
+      <h1 id="page-title">Trade with munaafa</h1>
+      <p class="sub">Stock Market Education</p>
+      </div>
+      <div class="body">
 
-  <h1> GUJRATI TRADER</h1>
+      <p class="intro">
+        Explore stock market concepts, understand market terminology,
+        and learn through educational content in our Telegram community.
+      </p>
 
-  <div class="features">
-    <div class="feature-item"><span class="icon"></span> Learning & Educational Sessions</div>
-    <div class="feature-item"><span class="icon"></span> Market Concepts & Awareness</div>
-    <div class="feature-item"><span class="icon"></span> Chart Reading Concepts</div>
-    <div class="feature-item"><span class="icon"></span> Educational Case Discussions</div>
-  </div>
+      <a class="join" href="https://t.me/+XoJLif9X3a8xNTE1" target="_blank" rel="noopener noreferrer" aria-label="Join Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 3.6 2.7 11c-1.3.5-1.3 1.3-.2 1.6l4.9 1.5 1.9 5.8c.2.6.1.8.7.8.5 0 .7-.2 1-.5l2.4-2.3 4.9 3.6c.9.5 1.5.2 1.7-.8l3.2-15.2c.3-1.3-.5-1.9-1.3-1.5ZM9 13.7l9.3-5.9c.4-.3.8-.1.5.2l-7.7 6.9-.3 3.2-1.8-4.4Z"/></svg>Join Telegram</a>
+      <p class="note">Explore educational content and community discussions.</p>
 
-  <p class="join-text">Join our learning community and grow your knowledge</p>
+      <div class="features">
+        <div class="feature">
+          <strong>Market Education</strong>
+          <p>Learn the basics and understand market concepts.</p>
+        </div>
+        <div class="feature">
+          <strong>Educational Insights</strong>
+          <p>Explore general market information and learning resources.</p>
+        </div>
+        <div class="feature">
+          <strong>Learning Community</strong>
+          <p>Discover educational content and community discussions.</p>
+        </div>
+      </div>
 
-  <a href="https://t.me/+mc6hSYTJFoU0MmRl" class="telegram-btn">JOIN TELEGRAM</a>
+      <section class="tg" aria-label="Channel preview">
+        <div class="tg-bar">
+          <img src="https://iili.io/nVgZzdl.jpg" alt="" width="38" height="38" loading="lazy">
+          <div><b>Trade with munaafa</b><span>Telegram community · educational</span></div>
+        </div>
+        <div class="tg-feed">
+          <div class="post"><b>What is a candlestick?</b>Each candle shows the open, high, low and close for one period. A green candle closed above its open; a red one closed below it.<small>Sample lesson · for learning only</small></div>
+          <div class="post"><b>What does P/E mean?</b>Price-to-earnings = share price ÷ earnings per share. One number alone cannot tell you if a stock is good or bad.<small>Sample lesson · for learning only</small></div>
+        </div>
+        <div class="tags"><span>Basics</span><span>Reading charts</span><span>Market terms</span><span>Risk management</span></div>
+      </section>
 
-  <p class="hindi-quote">     ,     </p>
+      <!-- Add your real details here only if true: channel admin name, years active, registration/licence number, support contact. -->
+      <section class="sec" aria-labelledby="how">
+        <h2 id="how">How it works</h2>
+        <ol class="steps">
+          <li><span><b>Join the channel</b>Tap the button. It is free to join and opens in Telegram.</span></li>
+          <li><span><b>Read the lessons</b>Posts explain terms, charts and concepts in plain language.</span></li>
+          <li><span><b>Do your own research</b>Use what you learn to make your own decisions.</span></li>
+        </ol>
+      <div class="disclaimer" style="margin-top:12px">
+        <h2>Privacy</h2>
+        <p>This page does not collect personal information, run forms or use cookies. The Join button opens Telegram, which has its own privacy policy and terms.</p>
+      </div>
+      <!-- Meta ads: add a visible contact email/business name and your real registration details (if any) here. -->
+    </section>
 
-  <div class="footer-box">
-    This Channel Advertise By <a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank">AD BUILD AGENCY</a>
-  </div>
+      <section class="sec dd" aria-label="What to expect">
+        <div class="yes"><b>What you will get</b>
+          <ul><li>Educational explanations of market concepts</li><li>General information, not personal advice</li><li>Open discussion with other learners</li></ul>
+        </div>
+        <div class="no"><b>What you will not get</b>
+          <ul><li>No guaranteed returns or "sure" profits</li><li>No buy/sell calls presented as certainty</li><li>No pressure to pay or invest</li></ul>
+        </div>
+      </section>
 
-  <div class="disclaimer">
-    Terms | Privacy | Disclaimer <br>
-    This site is not part of Facebook� or endorsed by Facebook�.
-  </div>
-</div>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2552096918611818');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2552096918611818&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+      <div class="safe sec">
+        <b>Stay safe on Telegram</b>
+        Never share OTPs, passwords or bank details with anyone, including admins. Ignore private messages that ask for money or promise profits.
+      </div>
+
+      <section class="sec" aria-labelledby="faq">
+        <h2 id="faq">Common questions</h2>
+        <details><summary>Is it free to join?</summary><p>Yes. Joining the Telegram community does not cost anything.</p></details>
+        <details><summary>Is this financial advice?</summary><p>No. Everything shared is for education only. Please speak to a qualified financial professional before investing.</p></details>
+        <details><summary>Can I lose money in the market?</summary><p>Yes. Stock market investments carry risk, including loss of capital. Only invest what you can afford to lose.</p></details> 
+      </section>
+
+      <div class="disclaimer">
+        <h2>Risk Disclaimer</h2>
+        <p>
+          This community is intended for educational and informational
+          purposes only. Stock market investments are subject to market
+          risks, including possible loss of capital. Educational content
+          does not guarantee returns or replace independent research or
+          advice from a qualified financial professional. Please assess
+          your risk tolerance before making investment decisions.
+        </p>
+      </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <div class="agency-promo">
+        <span>Sponsored / Promoted By</span>
+        <a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank" rel="noopener noreferrer">AD BUILD AGENCY ↗</a>
+      </div>
+      <div class="copyright">© 2026 Trade with munaafa · Stock Market Education</div>
+    </footer>
+  </main>
 </body>
 </html>
